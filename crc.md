@@ -39,9 +39,18 @@ Class HumanPlayer
         GamePlay
 
 
-Class ComputerPlayer
+Class ComputerPlayer1
     Responsibilities
         Rolls a die until score > 20 or raises exception
+    Collaborators 
+        Player
+        Turn
+        GamePlay
+
+
+Class ComputerPlayer2
+    Responsibilities
+        Rolls a die until score > 25 or raises exception
     Collaborators 
         Player
         Turn
@@ -60,13 +69,14 @@ Class Turn
         Dice
 
 
-Class Score
-
-
 Class GamePlay
     Responsibilities
         Chooses first player
         Switches player each turn
+        Returns all player's scores
+        Rolls or Holds
+        Plays Game while scores are < 100
+        Determines winner
     Collaborators
         RollAOneException
         Dice
