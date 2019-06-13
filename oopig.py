@@ -102,7 +102,7 @@ class Turn:
 
 class GamePlay:
     """Initializes game play for Pig"""
-    def __init__(self, humans=1, computers=2):
+    def __init__(self, humans=1, computers=1):
         
         self.players = []
 
