@@ -12,5 +12,5 @@ def test_name():
 
 def test_add_score():
     player1 = Player('Michael')
-    player_score = 5
-    Player.add_score(player1, player_score) == 5
+    player_score = 2
+    assert player1.add_score(player_score) != 3
